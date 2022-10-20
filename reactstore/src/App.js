@@ -13,10 +13,10 @@ function App() {
     <>
     <Header/>
     <Switch >
-       < Route to="/" component={Home} />
-       < Route to="/Products" component={Product} />
-       < Route to="/Contact" component={Contact} />
-       < Route to="/About" component={About} />
+       < Route exact path="/" component={Home} />
+       < Route exact path="/Products" component={Product} />
+       < Route exact path="/Contact" component={Contact} />
+       < Route exact path="/About" component={About} />
        <Redirect to ="/"/>
     </Switch>
     <Footer/>
