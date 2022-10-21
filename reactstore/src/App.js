@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Product from './components/Product';
 import { Route,Switch, Redirect } from 'react-router-dom';
+import ProductDetail from './components/ProductDetail';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Switch >
        < Route exact path="/" component={Home} />
        < Route exact path="/Products" component={Product} />
+       < Route exact path="/Products/:id" component={ProductDetail} />
        < Route exact path="/Contact" component={Contact} />
        < Route exact path="/About" component={About} />
        <Redirect to ="/"/>
