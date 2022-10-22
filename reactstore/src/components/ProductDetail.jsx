@@ -2,11 +2,14 @@ import React from 'react'
 import { useParams } from 'react-router';
 import DATA from '../Data';
 import {useState} from 'react'
+import { useDispatch} from 'react-redux'
+import {addItem, deleteItem} from '../redux/actions/index'
+
 
 
 const ProductDetail = () => {
     // passing a product id which is pass from the product page 
-
+    const dispatch = useDispatch()
     const [cartBtn, setCartBtn] = useState('Add to Cart')
 
     const proid= useParams();
@@ -19,9 +22,11 @@ const ProductDetail = () => {
     const handleCart = (product)=>{
         // eslint-disable-next-line
         if(cartBtn=='Add to Cart'){
+            dispatch(addItem(product))
             setCartBtn("Remove from Cart")
         }
         else{
+            dispatch(deleteItem(product))
             setCartBtn('Add to Cart')
         }
 
