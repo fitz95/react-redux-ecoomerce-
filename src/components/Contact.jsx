@@ -12,7 +12,7 @@ const Contact = () => {
         </div>
         <div className="row">
           <div className="col-md 5">
-            <img src="/assets/images/contactus.png" alt="contact"  width='60%' height= '70%'/>
+            <img src={process.env.PUBLIC_URL + "/assets/images/contactus.png"} alt="contact"  width='60%' height= '70%'/>
           </div>
           <div className="col-md-6">
             <form>

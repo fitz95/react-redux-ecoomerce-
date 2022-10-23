@@ -13,28 +13,28 @@ const Home = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="/assets/images/home/img1.jpg" className="d-block w-100" alt="IPHONE" height='500px'/>
+            <img src={process.env.PUBLIC_URL + "/assets/images/home/img1.jpg"} className="d-block w-100" alt="IPHONE" height='500px'/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img2.jpg" className="d-block w-100" alt="IPHONE" height='500px'/>
+            <img src= {process.env.PUBLIC_URL +"/assets/images/home/img2.jpg"} className="d-block w-100" alt="IPHONE" height='500px'/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
               </div>
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img6.jpg" className="d-block w-100" alt="IPHONE"height='500px'/>
+            <img src={process.env.PUBLIC_URL + "/assets/images/home/img6.jpg"} className="d-block w-100" alt="IPHONE"height='500px'/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img4.jpg" className="d-block w-100" alt="IPHONE" height='500px'/>
+            <img src={process.env.PUBLIC_URL +"/assets/images/home/img4.jpg"} className="d-block w-100" alt="IPHONE" height='500px'/>
               <div className="carousel-caption d-none d-md-block">
                 <h5>Fourth slide label</h5>
                 <p>Some representative placeholder content for the forth slide.</p>
