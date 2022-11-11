@@ -13,12 +13,12 @@ const Cart = () => {
     }
     const cartItems = (cartItem) => {
         return (
-            <div className="px-4 my-5 bg-light rounded-3">
+            <div className="px-4 my-5 bg-light rounded-3" key ={cartItem.id} >
                 <div className="container py-4">
                     <button onClick={()=> handleClose(cartItem)} className='btn-close float-end' aria-label='Close'></button>
                     <div className="row justify-content-center">
                         <div className="col-md-4">
-                            <img src={cartItem.img} alt ={cartItem.title} height= '200px' width ='180px'></img>
+                            <img src={process.env.PUBLIC_URL + cartItem.img} alt ={cartItem.title} height= '200px' width ='180px'></img>
                         </div>
                     <div className="col-md-4">
                         <h3>{cartItem.title}</h3>
