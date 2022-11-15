@@ -13,11 +13,11 @@ const ProductDetail = () => {
     const [cartBtn, setCartBtn] = useState('Add to Cart')
 
     const proid= useParams();
-    console.log(proid.id)
+    // console.log(proid.id)
     // eslint-disable-next-line
     const proDetail = DATA.filter(x=> x.id == proid.id)
     const product = proDetail[0];
-    console.log(product)
+    // console.log(product)
 
     const handleCart = (product)=>{
         // eslint-disable-next-line
