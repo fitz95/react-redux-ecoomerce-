@@ -5,7 +5,7 @@ const Checkout = () => {
     
     const itemList = (item) => {
         return (
-            <li className="list-group-item d-flex justify-content-between lh-sm">
+            <li className="list-group-item d-flex justify-content-between lh-sm" kry ={item.id}>
                 <div>
                     <h6 className="my-0">{item.title}</h6>
                     <small className="text-muted">{item.desc}</small>
@@ -41,7 +41,7 @@ const Checkout = () => {
                     </div>
                     <div className="col-md-7 col-lg-8">
                         <h4 className="mb-3">Billing address</h4>
-                        <form className="needs-validation" novalidate="">
+                        <form className="needs-validation" noValidate="">
                             <div className="row g-3">
                                 <div className="col-sm-6">
                                     <label htmlFor="firstName" className="form-label">First name</label>
