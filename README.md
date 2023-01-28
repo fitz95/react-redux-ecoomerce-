@@ -1,3 +1,4 @@
+This project is an ecomerce site that is built using react and redux. This site gives the possibilities to the users to get items of their choice and puts to in a cart and acceses the part to add  more and delete.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
